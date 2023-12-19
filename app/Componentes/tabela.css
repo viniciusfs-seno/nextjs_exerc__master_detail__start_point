@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: var(--primary-color); 
+    color: white;
+  }
+  
+  th, td {
+    border: 1px solid var(--primary-color); 
+    padding: 8px;
+    text-align: center; 
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: var(--secondary-color); 
+  }
+  

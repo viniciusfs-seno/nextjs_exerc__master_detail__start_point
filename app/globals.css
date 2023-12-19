@@ -3,20 +3,82 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: #8ec6c5; 
+  --secondary-color: #ffd3b6; 
+  --background-color: #f4f1de;
+  --text-color: #3d405b;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --primary-color: #003366; 
+    --secondary-color: #ffcc99; 
+    --background-color: #222831;
+    --text-color: #eeeeee;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #D4DADE
+  color: var(--text-color);
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+section h2 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.cursos-title {
+  text-align: left;
+  margin-left: -260px;
+}
+
+
+section {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+section select {
+  width: 50%;
+  margin-top: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.filters-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.filter-section {
+  width: 50%;
+}
+
+#cursos {
+  width: 250%;
+  margin-left: -290px;
+}
+
+#periodo {
+  width: 80%;
+  margin-right: -10px;
 }
